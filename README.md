@@ -3,7 +3,7 @@
 </p>
 
 <h1 align = "center">Network Fileshare and Permissions in Active Directory</h1>
-File sharing and permission set up is an essential in a business structure in order to organize resources and make sure users have the appropriate permissions and access to files they need. This lab demonstrates how file sharing and permissions work in the Active Directory domain. This lab assumes you have fully installed and configured Active Directory on a Domain Controller in a virtual machine as well as set connection with a Client virtual machine, the tutorial can be found <a href = "https://github.com/ColtonTrauCC/active-directory">here</a>.
+File sharing and permission set up is an essential in a business structure in order to organize resources and make sure users have the appropriate permissions and access to files they need. This lab demonstrates how file sharing and permissions work in the Active Directory domain. This lab assumes you have fully installed and configured Active Directory on a Domain Controller in a virtual machine as well as set connection with a Client virtual machine.
 
 <br />
 
