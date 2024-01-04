@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/ColtonTrauCC/network-fileshare/assets/147654000/efe94bff-a469-4342-a4c6-e927befd13b9" height = 20% width = 20%/>
+<img src="https://github.com/Kasen-Elliot/network-fileshare-/assets/127895952/059b79e9-1899-4937-9a8b-2749f153a277" height = 20% width = 20%/>
 </p>
 
 <h1 align = "center">Network Fileshare and Permissions in Active Directory</h1>
@@ -40,7 +40,7 @@ File sharing and permission set up is an essential in a business structure in or
     </ul>
     <li>Example of setting group and permissions for read_access</li>
     <ul>
-      <li><img src ="https://github.com/ColtonTrauCC/network-fileshare/assets/147654000/0942d01d-f85f-4b10-a257-f399c3fc5e26" width = 80% height = 80%/></li>
+      <li><img src ="https://github.com/Kasen-Elliot/network-fileshare-/assets/127895952/76d027ea-4d5b-47d4-814c-c12fb3963265" width = 80% height = 80%/></li>
     </ul>
   </ul>
 </p>
@@ -53,11 +53,11 @@ File sharing and permission set up is an essential in a business structure in or
   <ul>
     <li>Go to the Client VM and navigate to the shared folder through <b>File Explorer</b> and typing <b>\\dc-1</b></li>
     <ul>
-      <li><img src ="https://github.com/ColtonTrauCC/network-fileshare/assets/147654000/3144b792-b6bf-4f27-b798-d2d8256308ff" width = 80% height = 80%/></li>
+      <li><img src ="https://github.com/Kasen-Elliot/network-fileshare-/assets/127895952/c8835af4-8374-4525-94d2-3a42a2e76b56" width = 80% height = 80%/></li>
     </ul>
     <li>Attempt to access the folders through the Client VM; the only one that should be inaccessible by how the permissions are set should be <b>no_access</b></li>
     <ul>
-      <li><img src ="https://github.com/ColtonTrauCC/network-fileshare/assets/147654000/bbc34c03-d505-43b9-aadc-9b3b73db65be" width = 80% height = 80%/></li>
+      <li><img src ="https://github.com/Kasen-Elliot/network-fileshare-/assets/127895952/285768ac-29b4-43fc-b99d-111c9eea954f" width = 80% height = 80%/></li>
     </ul>
   </ul>
 </p>
@@ -70,21 +70,21 @@ File sharing and permission set up is an essential in a business structure in or
   <ul>
     <li>Head back to the Domain Controller VM, go to the Server Manager Board and go to <b>Active Directory Users and Computers</b> and create a new <b>Organizational Unit (OU)</b> and name it "_SECURITY_GROUP."</li>
     <ul>
-      <li><img src = "https://github.com/ColtonTrauCC/network-fileshare/assets/147654000/af27e138-36de-44b0-85e9-a2b37088d496" width = 80% height = 80%/></li>
+      <li><img src = "https://github.com/Kasen-Elliot/network-fileshare-/assets/127895952/854b72ee-71ab-4c10-9308-19f0f8d16b47" width = 80% height = 80%/></li>
     </ul>
     <li>Inside the OU, create a <b>Group</b> and name it "ACCOUNTANTS"</li>
     <ul>
-      <li><img src = "https://github.com/ColtonTrauCC/network-fileshare/assets/147654000/12e4bde2-5aad-4981-b1b9-4fe847355b1c" width = 80% height = 80%/></li>
+      <li><img src = "https://github.com/Kasen-Elliot/network-fileshare-/assets/127895952/aaec89f1-3aaf-440b-aacd-95426d1efd74" width = 80% height = 80%/></li>
     </ul>
     <li>Locate the <b>accounting</b> folder created in C:\ Drive and add the ACCOUNTANTS group and set its permissions to Read/Write</li>
     <ul>
-      <li><img src = "https://github.com/ColtonTrauCC/network-fileshare/assets/147654000/567b094a-da96-49aa-ba2f-9f70d9c26844" width = 80% height = 80%/></li>
+      <li><img src = "https://github.com/Kasen-Elliot/network-fileshare-/assets/127895952/344af5ac-825f-45c5-a54d-c5bc905af31c" width = 80% height = 80%/></li>
     </ul>
     <li>The user logged in the Client VM should not have access to the accounting folder since it's not part of the Group. Log off the Client VM and remember the username you used to log in to the Client as it's going to be set as part of the ACCOUNTANTS group</li>
     <li>In the Domain Controller VM, go to the _SECURITY_GROUP OU,  right click on the ACCOUNTANTS to open up <b>Properites</b>, go to the <b>Members</b> tab and add the user as a member of the Group</li>
     <ul>
       <li>In this example, the user "ban.doh" is used</li>
-      <li><img src = "https://github.com/ColtonTrauCC/network-fileshare/assets/147654000/9ccc7a04-e3eb-4145-8485-2431280b86e7" width = 80% height = 80%/></li>
+      <li><img src = "https://github.com/Kasen-Elliot/network-fileshare-/assets/127895952/556167f4-1c8a-4de2-8552-27e3d1916352" width = 80% height = 80%/></li>
     </ul>
     <li>Sign back into the Client VM with user you made part of the ACCOUNTANTS group and it should now have access to the accounting folder</li>
   </ul>
